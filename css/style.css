@@ -9,18 +9,18 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #5A639C;
+    background-color: #f4dfdd;
 }
 .container {
     width: 400px;
-    background-color: #7776B3;
+    background-color: #9DBDFF;
     padding: 20px;
     text-align: center;
     border-radius: 6px;
-    box-shadow: 0 0 10px #AD49E1;
+    box-shadow: 0 0 10px #2c3967;
 }
 .container h2 {
-    color: #2E073F;
+    color: #fff;
     margin-bottom: 15px;
 }
 
@@ -57,13 +57,16 @@ i {
     height: 30px;
     padding: 10px 15px;
     margin: 0 auto 3px;
-    background-color: #5A639C;
+    background-color: #496ae1;
     text-align: center;
     line-height: .5;
     cursor: pointer;
-    color: #EBD3F8;
+    color: #fff;
     border-radius: 6px;
     margin-bottom: 10px;
+}
+.convert:hover{
+    background-color: #5668d9;
 }
 .res{
     width: 70%;

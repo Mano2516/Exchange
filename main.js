@@ -6,6 +6,7 @@ let res=document.querySelector(".res")
 let from = document.querySelector(".in")
 let to = document.querySelector(".out")
 let btn = document.querySelector(".convert");
+let change = document.querySelector(".change");
     let dataTo;
     let dateFrom;
     let inValue ;
@@ -40,6 +41,30 @@ fetch("https://v6.exchangerate-api.com/v6/ec62e8b7cf19036236cce96f/latest/USD").
         outValue=obj[dataTo]
     } 
     // res.style.display ="none";
+    // change.addEventListener("click", function(){
+    //     let sw =to.value;
+    //     to.value= from.value;
+    //     from.va=sw;
+        
+        btn.addEventListener("click", function(){
+            if(inputValue.value<0){
+                res.style.display ="block";
+                res.innerHTML="Enter Vaild Value"
+                // from.value="";
+                // to.vlaue=""
+                // inputValue.value=""
+            }else{
+                // console.log((outValue/inValue)*inputValue.value)
+                res.style.display ="block";
+                res.innerHTML=((outValue/inValue)*inputValue.value).toFixed(3);
+                // from.value="";
+                // to.innerHTML=""
+                // inputValue.value=""
+                // res.style.display ="none";
+            }
+            // res.style.display ="none";
+        })
+    })
     btn.addEventListener("click", function(){
         if(inputValue.value<0){
             res.style.display ="block";
@@ -68,7 +93,7 @@ fetch("https://v6.exchangerate-api.com/v6/ec62e8b7cf19036236cce96f/latest/USD").
     //     console.log(test.conversion_rates[dta])
     // }
 
-})
+// })
 
 
 
